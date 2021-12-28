@@ -17,17 +17,11 @@ for installing the Styled library
 Working with stylization
 
 ### REST API GitHub
-
-#### Link da documentação da API
-[docs.github.com/pt/rest](https://docs.github.com/pt/rest)
+- [docs.github.com/pt/rest](https://docs.github.com/pt/rest)
 To create integrations, retrieve data, and automate your workflows, build with the GitHub REST API.
 
-[https://docs.github.com/pt/rest/reference/users](https://docs.github.com/pt/rest/reference/users)
-[https://docs.github.com/pt/rest/reference/repos](https://docs.github.com/pt/rest/reference/repos)
-
-#### Links das APIs
-[https://api.github.com](https://api.github.com)
-[https://api.github.com/users](https://api.github.com/users)
+- [https://api.github.com](https://api.github.com)
+- [https://api.github.com/users](https://api.github.com/users)
 
 ## Tips
 - [eslint-plugin-jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y)

@@ -1,10 +1,10 @@
 /*
-    Dumb component
+    Dumb component (Generic)
     Responsible: Receive page content and render 
 */
 import React from "react";
 
-function Layout( {children} ){
+const Layout = ( {children} ) => {
 
     return (
         <section>
