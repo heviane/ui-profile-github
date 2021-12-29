@@ -3,15 +3,16 @@
     Responsible: Receive page content and render 
 */
 import React from "react";
+// import tudo que esta dentro do styled.js e cria um alias para simplificar o código
+import * as S from './styled'; 
 
 const Layout = ( {children} ) => {
 
     return (
-        <section>
+        <S.wrapperLayout>
             <header>header</header>
             {children}
-        </section>
-
+        </S.wrapperLayout>
     );
 }
 
