@@ -1,21 +1,30 @@
-import Layout from './components/layout';
-import Profile from './components/profile';
-import ResetCSS from './global/resetCSS.js';
-
-// Warning: <resetCSS /> is using incorrect casing.
-// Use PascalCase for React components, or lowercase for HTML elements.
+import React from "react";
+import Layout from "./components/layout";
+import NoSearch from "./components/noSearch";
+import Profile from "./components/profile";
+import Repositories from "./components/repositories";
+import useGithub from "./hooks/githubHooks";
 
 const App = () => {
-	return (
-		<main>
-			<ResetCSS />
-			<Layout>
-				<Profile />
-			</Layout>
-			<div>Repositories</div>
-        	<div>Starreds</div>			
-		</main>
-	);
-}
+  const { githubState } = useGithub();
+  return (
+    <Layout>
+      {githubState.hasUser ? (
+        <>
+          {githubState.loading ? (
+            <p>Loading</p>
+          ) : (
+            <>
+              <Profile />
+              <Repositories />
+            </>
+          )}
+        </>
+      ) : (
+        <NoSearch />
+      )}
+    </Layout>
+  );
+};
 
 export default App;

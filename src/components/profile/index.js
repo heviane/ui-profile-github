@@ -1,38 +1,62 @@
-import React from 'react';
-// import tudo que esta dentro do styled.js e cria um alias para simplificar o código
-import * as S from './styled'; 
-
-// S.wrapper é uma DIV
+import React from "react";
+import useGithub from "../../hooks/githubHooks";
+import * as S from "./styled";
 
 const Profile = () => {
-    return (
-    <S.wrapper>
-        <S.wrapperImage src="https://avatars.githubusercontent.com/u/2830137?v=4" alt="Avatar of user" />
-        <S.wrapperInfoUser>
-            <div>
-                <h1>Heviane Bastos</h1>
-                <S.wrapperUserName>
-                    <h3>Username:</h3>
-                    <a href="https://github.com/heviane" target="_blank" rel="noreferrer" >heviane</a>
-                </S.wrapperUserName>
-            </div>
-            <S.wrapperStatusCount>
-                <div>
-                    <h4>Followers</h4>
-                    <span>5</span>
-                </div>
-                <div>
-                    <h4>Starreds</h4>
-                    <span>10</span>
-                </div>
-                <div>
-                    <h4>Followings</h4>
-                    <span>7</span>
-                </div>
-            </S.wrapperStatusCount>
-        </S.wrapperInfoUser>
-    </S.wrapper>
-    );
-}
+  const { githubState } = useGithub();
+
+  return (
+    <S.Wrapper>
+      <S.WrapperImage src={githubState.user.avatar} alt="Avatar of user" />
+      <S.WrapperInfoUser>
+        <div>
+          <h1>{githubState.user.name}</h1>
+          <S.WrapperUserGeneric>
+            <h3>Username:</h3>
+            <a
+              href={githubState.user.html_url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {githubState.user.login}
+            </a>
+          </S.WrapperUserGeneric>
+          <S.WrapperUserGeneric>
+            <h3>Company:</h3>
+            <span>{githubState.user.company}</span>
+          </S.WrapperUserGeneric>
+          <S.WrapperUserGeneric>
+            <h3>Location:</h3>
+            <span>{githubState.user.location}</span>
+          </S.WrapperUserGeneric>
+          <S.WrapperUserGeneric>
+            <h3>Blog:</h3>
+            <a href={githubState.user.blog} target="_blank" rel="noreferrer">
+              {githubState.user.blog}
+            </a>
+          </S.WrapperUserGeneric>
+        </div>
+        <S.WrapperStatusCount>
+          <div>
+            <h4>Followers</h4>
+            <span> {githubState.user.followers}</span>
+          </div>
+          <div>
+            <h4>Followings</h4>
+            <span> {githubState.user.following}</span>
+          </div>
+          <div>
+            <h4>Gists</h4>
+            <span> {githubState.user.public_gists}</span>
+          </div>
+          <div>
+            <h4>Repos</h4>
+            <span> {githubState.user.public_repos}</span>
+          </div>
+        </S.WrapperStatusCount>
+      </S.WrapperInfoUser>
+    </S.Wrapper>
+  );
+};
 
 export default Profile;
