@@ -4,6 +4,7 @@ Frontend totalmente componentizado com [React.js](https://reactjs.org), consumin
 ## References
 - [PlayList do Curso no YouTube](https://www.youtube.com/playlist?list=PLTv2Rbwcr_Cru7KIHcffE1Shg9X9Eix7a)
 - [Repositório do Curso no GitHub](https://github.com/benits/github-api-interface)
+
 ## Endpoints Implemented by the teacher
 - [https://api.github.com/users/heviane](https://api.github.com/users/heviane)
 - [https://api.github.com/users/heviane/repos](https://api.github.com/users/heviane/repos)
