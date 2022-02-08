@@ -2,18 +2,8 @@
   "name": "ui-github-api",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.24.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "react-tabs": "^3.2.3",
-    "styled-components": "^5.3.3",
-    "web-vitals": "^2.1.2"
-  },
+  "description": "UI profile with github apis.",
+  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -36,5 +26,28 @@
       "last 1 chrome version",
       "last 1 firefox version"
     ]
-  }
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^0.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "5.0.0",
+    "react-tabs": "^3.2.3",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^2.1.2"
+  },
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heviane/ui-github-api.git"
+  },
+  "author": "Heviane Bastos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heviane/ui-github-api/issues"
+  },
+  "homepage": "https://github.com/heviane/ui-github-api#readme"
 }
