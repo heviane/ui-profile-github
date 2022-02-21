@@ -39,7 +39,6 @@
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.2"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/heviane/ui-github-api.git"
@@ -49,5 +48,6 @@
   "bugs": {
     "url": "https://github.com/heviane/ui-github-api/issues"
   },
-  "homepage": "https://github.com/heviane/ui-github-api#readme"
+  "homepage": "https://github.com/heviane/ui-github-api#readme",
+  "devDependencies": {}
 }
