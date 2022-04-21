@@ -4,13 +4,13 @@ Projeto realizado durante bootcamp na [Digital Innovation one](https://web.dio.m
 
 A ideia é construir uma User Interface (UI) com o frontend totalmente componentizado com [React](https://reactjs.org) e consumindo as API's do Github [https://api.github.com](https://api.github.com) para obter e listar as informações de acordo determinado usuário pesquisado pelo **username**.
 
-## Features
+## :hammer: Features
 
-- [Consultar Usuário](https://api.github.com/users/heviane)
-- [Listar Repositórios](https://api.github.com/users/heviane/repos)
-- [Listar Repositórios Favoritados](https://api.github.com/users/heviane/starred)
-- [Listar Usuários Seguidores](https://api.github.com/users/heviane/followers)
-- [Listar Usuários Seguidos](https://api.github.com/users/heviane/following)
+- `Consultar usuário pelo username`: [https://api.github.com/users/heviane](https://api.github.com/users/heviane)
+- `Listar Repositórios`: [https://api.github.com/users/heviane/repos](https://api.github.com/users/heviane/repos)
+- `Listar Repositórios Favoritados`: [https://api.github.com/users/heviane/starred](https://api.github.com/users/heviane/starred)
+- `Listar Usuários Seguidores`: [https://api.github.com/users/heviane/followers](https://api.github.com/users/heviane/followers)
+- `Listar Usuários Seguidos`: [https://api.github.com/users/heviane/following](https://api.github.com/users/heviane/following)
 
 ## Lessons Learned ✔
 

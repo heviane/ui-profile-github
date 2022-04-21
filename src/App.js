@@ -8,7 +8,7 @@ import useGithub from "./hooks/githubHooks";
 const App = () => {
   const { githubState } = useGithub();
 
-  console.log(githubState.hasUser);
+  console.log('Testing...' + githubState.hasUser);
 
   return (
     <Layout>
